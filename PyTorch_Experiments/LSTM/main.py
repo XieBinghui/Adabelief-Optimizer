@@ -81,7 +81,7 @@ parser.add_argument('--run', type=int, default=0,
                     help='Number of runs')
 args = parser.parse_args()
 
-args.save = args.save + '-niter-{}'.format(args.epochs) + '-optimizer-{}'.format(args.optimizer) + '-nlayers{}'.format(args.nlayers) + \
+args.save = 'save/' + args.save + '-niter-{}'.format(args.epochs) + '-optimizer-{}'.format(args.optimizer) + '-nlayers{}'.format(args.nlayers) + \
             '-lr{}'.format(args.lr) + '-clip-{}'.format(args.clip) +'-eps{}'.format(args.eps) \
             +'-epsqrt{}'.format(args.eps_sqrt) + '-betas-{}-{}'.format(args.beta1, args.beta2) + '-run{}'.format(args.run) + '-wdecay{}-when-{}'.format(args.wdecay, args.when)
 

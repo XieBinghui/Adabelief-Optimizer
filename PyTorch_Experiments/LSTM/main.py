@@ -341,7 +341,7 @@ try:
 
         #print(train_losses)
         torch.save({'train_loss': train_losses, 'test_loss': val_losses},
-                   os.path.join('curve', args.save))
+                   os.path.join('curve', args.save[5:]))
 
 except KeyboardInterrupt:
     print('-' * 89)
